@@ -1,0 +1,32 @@
+.detalhe {
+  display: flex;
+  flex-direction: column;
+}
+
+.detalhe-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.detalhe-header-texto {
+  margin-left: 30px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.detalhe-header-texto p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.detalhe-header-texto p:nth-child(1) {
+  font-size: 32px;
+}
+
+.episodios-grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}

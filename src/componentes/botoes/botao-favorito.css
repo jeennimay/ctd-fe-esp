@@ -1,0 +1,8 @@
+.botao-favorito {
+  cursor: pointer;
+}
+
+.botao-favorito > img {
+  width: 25px;
+  height: 25px;
+}
