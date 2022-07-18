@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
+import { fetchCharactersThunk, filterCharcatersThunk } from "../../store/actions/characters.action";
 import "./filtros.css";
 
 const Filtros = () => {
@@ -10,17 +11,17 @@ const Filtros = () => {
 
   const handlerClick = (e: any) => {
     e.preventDefault();
-    /* if (!text) {
+    if (!text) {
       fetchCharactersThunk()(dispatch);
     } else {
       filterCharcatersThunk(text)(dispatch);
-    } */
+    }
   }
 
   const handlerClear = (e: any) => {
     e.preventDefault();
     setText('');
-    /* fetchCharactersThunk()(dispatch); */
+    fetchCharactersThunk()(dispatch);
   }
 
   const onChange = (e: any) => {
@@ -39,8 +40,8 @@ const Filtros = () => {
         placeholder="Rick, Morty, Beth, Alien, ...etc"
         name="nome"
       />
-        <button onClick={handlerClick}>Pesquisar</button>
-        <button onClick={handlerClear}>Limpar</button>
+        <button className={"btn primary"} onClick={handlerClick}>Pesquisar</button>
+        <button className={"btn clear"} onClick={handlerClear}>Limpar</button>
     </div>
   );
 };

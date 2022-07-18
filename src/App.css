@@ -39,6 +39,17 @@ button.danger {
   color: white;
 }
 
+button.clear {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px;
+  background-color: #eed80f;
+  color: black;
+}
+
 @media (max-width: 1280px) {
   .container {
       max-width: 960px;

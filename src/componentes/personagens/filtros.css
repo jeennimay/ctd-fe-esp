@@ -11,7 +11,12 @@
 
 .filtros input[type="text"]{
   flex-grow: 1;
+  font-size: medium;
   padding: 15px 20px; 
   border-radius: 3px;
   border: 1px solid #d0d0d0;
+}
+
+.filtros button.btn{
+  margin-top: 16px;
 }
